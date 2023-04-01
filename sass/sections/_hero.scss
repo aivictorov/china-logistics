@@ -1,0 +1,50 @@
+.hero {
+	padding-top: 75px;
+	padding-bottom: 70px;
+	background-color: #F6F6F6;
+}
+
+.hero__content {
+	background-image: url('./../img/hero/train.jpg');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.hero__title {
+	margin-bottom: 20px;
+	max-width: 420px;
+}
+
+.hero__badge-buttons {
+	display: flex;
+	column-gap: 10px;
+	margin-bottom: 30px;
+}
+
+.hero__list {
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+
+	li {
+		position: relative;
+		padding-left: 32px;
+
+		&::before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: 22px;
+			height: 22px;
+			background-image: url('./../img/hero/list-marker.svg');
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+// .hero__freight-calc {}

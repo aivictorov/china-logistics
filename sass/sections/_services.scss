@@ -1,0 +1,15 @@
+.services {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.services__title {
+	margin-bottom: 55px;
+	max-width: 550px;
+}
+
+.services__cards {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 40px;
+}

@@ -1,0 +1,31 @@
+.production-form {
+	padding: 40px 25px;
+	border: 1px solid #DEDEDE;
+	border-radius: 20px;
+}
+
+.production-form__title {
+	margin-bottom: 10px;
+}
+
+
+.production-form__subtitle {
+	margin-bottom: 20px;
+}
+
+.production-form__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.production-form__input {
+	width: 265px;
+}
+
+.production-form__button {
+	width: 300px;
+	height: 55px;
+	line-height: 51px;
+}

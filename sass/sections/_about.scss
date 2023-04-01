@@ -1,0 +1,55 @@
+.about {
+	padding-top: 83px;
+	padding-bottom: 48px;
+	background-color: #F6F6F6;
+}
+
+.about__title {
+	margin-bottom: 30px;
+}
+
+.about__text {
+	margin-bottom: 40px;
+	max-width: 700px;
+	font-size: 14px;
+
+	p+p {
+		margin-top: 15px;
+	}
+}
+
+.about__subtitle {
+	margin-bottom: 27px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.about__benefits-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	column-gap: 40px;
+	row-gap: 15px;
+	max-height: 160px;
+	font-size: 14px;
+
+	li {
+		position: relative;
+		padding-left: 33px;
+		width: calc((100% - 40px) / 2);
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background-image: url('./../img/about/list-marker.svg');
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}
+

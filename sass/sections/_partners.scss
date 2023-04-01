@@ -1,0 +1,27 @@
+.partners {
+	padding-top: 48px;
+	padding-bottom: 60px;
+}
+
+.partners__title {
+	margin-bottom: 45px;
+}
+
+.partners__button {
+	width: 280px;
+	height: 55px;
+	line-height: 51px;
+}
+
+.partners__slider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 124px;
+
+	img {
+		width: 160px;
+		height: 44px;
+		object-fit: contain;
+	}
+}

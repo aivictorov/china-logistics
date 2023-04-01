@@ -1,0 +1,39 @@
+.routes {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.routes__map-wrapper {
+	position: relative;
+}
+
+.routes__title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 85px;
+	background-image: url('./../img/routes/background.svg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	.title-2 {
+		font-size: 40px;
+	}
+}
+
+.routes__map {
+	width: 1160px;
+	height: 767px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

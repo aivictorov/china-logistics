@@ -1,0 +1,51 @@
+.button {
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 45px;
+	line-height: 41px;
+	border-radius: 7px;
+	border: 2px solid #d60029;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #e80000;
+		border-color: #e80000;
+		color: #FFF;
+		transition: background-color .2s ease-in, border-color .2s ease-in, color .2s ease-in;
+	}
+
+	&--solid {
+		background-color: #d60029;
+		color: #FFF;
+	}
+}
+
+.language-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 20px;
+	color: #d60029;
+	font-weight: 500;
+
+	&:not(:last-child) {
+		border-right: 2px solid #d60029;
+	}
+
+	&--active {
+		font-weight: 800;
+	}
+}
+
+.badge-button {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 50px;
+	border: 1px solid #E1E1E1;
+	background-color: #FFF;
+	font-size: 14px;
+	line-height: 34px;
+}

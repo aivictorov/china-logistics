@@ -1,0 +1,25 @@
+.freight-calc {
+	padding: 37px 25px 40px;
+	border-radius: 20px;
+	background-color: #3451a0;
+}
+
+.freight-calc__title {
+	margin-bottom: 35px;
+	color: #FFF;
+}
+
+.freight-calc__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.freight-calc__input {
+	width: 380px;
+}
+
+.freight-calc__button {
+	height: 55px;
+	width: 340px;
+}
