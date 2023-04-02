@@ -8,6 +8,7 @@
 	height: 163px;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
+	overflow: hidden;
 
 	img {
 		width: 100%;
@@ -36,7 +37,12 @@
 }
 
 .transport-card__content {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
 	padding: 30px 15px;
+	height: calc(100% - 163px);
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border: 1px solid #DEDEDE;
@@ -74,6 +80,6 @@
 	margin: 0 auto;
 	height: 55px;
 	width: calc(100% - 20px);
-
 	font-weight: 500;
+	font-size: 14px;
 }

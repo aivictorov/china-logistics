@@ -10,6 +10,10 @@
 	margin-bottom: 24px;
 }
 
+.modal-form__checkbox:not(:last-of-type) {
+	margin-bottom: 10px;
+}
+
 .modal-form__input {
 	margin-bottom: 25px;
 	height: 60px;

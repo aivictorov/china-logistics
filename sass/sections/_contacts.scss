@@ -13,9 +13,17 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 80px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		flex-direction: column;
+		justify-content: unset;
+		align-items: unset;
+		row-gap: 10px;
+	}
 }
 
-.contacts__adress {}
+// .contacts__adress {}
 
 .contacts__metro {
 	display: flex;
@@ -46,4 +54,13 @@
 .contacts__map {
 	width: 1160px;
 	height: 400px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 860px;
+
+		iframe {
+			width: 860px;
+		}
+	}
 }

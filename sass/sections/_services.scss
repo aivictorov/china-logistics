@@ -10,6 +10,11 @@
 
 .services__cards {
 	display: flex;
-	align-items: flex-start;
+	align-items: stretch;
 	column-gap: 40px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		column-gap: 20px;
+	}
 }

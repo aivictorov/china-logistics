@@ -10,7 +10,18 @@ $(document).ready(function () {
 			loop: true,
 			items: 6,
 			nav: false,
-			dots: false
+			dots: false,
+			responsive : {
+				0 : {
+					items: 4,
+				},
+				480 : {
+					items: 4,
+				},
+				900 : {
+					items: 4,
+				}
+			}
 		}
 	);
 
@@ -30,7 +41,18 @@ $(document).ready(function () {
 			loop: true,
 			items: 6,
 			nav: false,
-			dots: false
+			dots: false,
+			responsive : {
+				0 : {
+					items: 4,
+				},
+				480 : {
+					items: 4,
+				},
+				900 : {
+					items: 4,
+				}
+			}
 		}
 	);
 

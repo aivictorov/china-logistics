@@ -16,6 +16,8 @@
 @import "./blocks/tabs";
 @import "./blocks/modal";
 @import "./blocks/modal-form";
+@import "./blocks/custom-checkbox";
+@import "./blocks/select";
 
 // Sections
 @import "./sections/header/header-top";
@@ -23,7 +25,7 @@
 @import "./sections/hero";
 @import "./sections/transport";
 @import "./sections/production";
-@import "./sections/container-freight";
+@import "./sections/containers";
 @import "./sections/trains";
 @import "./sections/services";
 @import "./sections/routes";

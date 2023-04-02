@@ -22,14 +22,24 @@
 	background-repeat: no-repeat;
 	text-align: center;
 
+	/* Tablet */
+	@media (max-width: 1199px) {
+		height: 70px;
+	}
+
 	.title-2 {
 		font-size: 40px;
+
+		/* Tablet */
+		@media (max-width: 1199px) {
+			font-size: 35px;
+		}
 	}
 }
 
 .routes__map {
-	width: 1160px;
-	height: 767px;
+	width: 100%;
+	height: auto;
 
 	img {
 		width: 100%;

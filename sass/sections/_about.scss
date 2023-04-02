@@ -2,6 +2,11 @@
 	padding-top: 83px;
 	padding-bottom: 48px;
 	background-color: #F6F6F6;
+	overflow: hidden;
+
+	.container {
+		position: relative;
+	}
 }
 
 .about__title {
@@ -20,8 +25,8 @@
 
 .about__subtitle {
 	margin-bottom: 27px;
-    font-weight: 800;
-    font-size: 18px;
+	font-weight: 800;
+	font-size: 18px;
 }
 
 .about__benefits-list {
@@ -53,3 +58,31 @@
 	}
 }
 
+.about__images {
+	position: absolute;
+	top: 100px;
+	right: -300px;
+	display: flex;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		display: none;
+	}
+}
+
+.about-platform-1-image {
+
+	img {
+		width: 379px;
+		height: 109px;
+		object-fit: contain;
+	}
+}
+
+.about-platform-2-image {
+	img {
+		width: 379px;
+		height: 109px;
+		object-fit: contain;
+	}
+}

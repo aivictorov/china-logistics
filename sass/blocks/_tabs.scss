@@ -16,7 +16,7 @@
 
 		.tab__icon {
 			background-color: #e80000;
-	
+
 			svg {
 				stroke: #FFF;
 			}
@@ -34,7 +34,7 @@
 	background-color: transparent;
 	transition: background-color .2s ease-in, transform .2s ease-in;
 
-	&.active{
+	&.active {
 		transform: rotate(45deg);
 	}
 
@@ -45,15 +45,17 @@
 }
 
 .tab__content {
-	padding: 0px 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 0;
 	opacity: 0;
-	max-height: 0px;
 	overflow: hidden;
-	transition: all 0.3s ease-in;
+	transition: all .2s ease-in;
 
 	&.active {
-		padding-bottom: 40px;
-		max-height: 1000px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: auto;
 		opacity: 1;
 	}
 }

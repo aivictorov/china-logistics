@@ -92,3 +92,12 @@ label {
 legend {
 	display: block;
 }
+
+.select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}

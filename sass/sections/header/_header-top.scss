@@ -48,6 +48,14 @@
 	column-gap: 10px;
 }
 
+.header-top__calculate-button {
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		display: none;
+	}
+}
+
 .header-top__callback-button {
 	display: flex;
 	justify-content: center;

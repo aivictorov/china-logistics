@@ -10,6 +10,7 @@
 	overflow-y: auto;
 	z-index: 9;
 	cursor: pointer;
+	transition: opacity .2s ease-in;
 
 	&.active {
 		top: 0;

@@ -22,10 +22,20 @@
 
 .production-form__input {
 	width: 265px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 210px;
+	}
 }
 
 .production-form__button {
 	width: 300px;
 	height: 55px;
 	line-height: 51px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 162px;
+	}
 }

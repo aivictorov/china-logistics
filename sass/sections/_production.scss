@@ -9,11 +9,17 @@
 
 .production__list {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 	column-gap: 15px;
 	row-gap: 5px;
-	flex-wrap: wrap;
 	margin-bottom: 100px;
+	max-height: 400px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		font-size: 14px;
+	}
 
 	li {
 		display: flex;

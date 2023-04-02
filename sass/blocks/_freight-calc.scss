@@ -17,9 +17,19 @@
 
 .freight-calc__input {
 	width: 380px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 278px;
+	}
 }
 
 .freight-calc__button {
 	height: 55px;
 	width: 340px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 245px;
+	}
 }

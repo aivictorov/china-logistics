@@ -8,6 +8,11 @@
 	background-image: url('./../img/hero/train.jpg');
 	background-position: right;
 	background-repeat: no-repeat;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		background: none;
+	}
 }
 
 .hero__title {
