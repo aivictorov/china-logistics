@@ -50,8 +50,6 @@ window.addEventListener('DOMContentLoaded', function () {
 			icon.classList.toggle('active');
 			content.classList.toggle('active');
 		});
-
-
 	});
 });
 
@@ -59,18 +57,40 @@ window.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('DOMContentLoaded', () => {
 	
-	document.querySelectorAll('[data-modal]').forEach((button) => {
-		const overlay = document.querySelector('.modal-overlay');
-		const modalWindow = document.querySelector(`[data-window="${button.dataset.modal}"]`);
+	document.querySelectorAll('button[modal-button]').forEach((button) => {
+		const modal = document.querySelector(`div[modal-window="${button.getAttribute('modal-button')}"]`);
 
-		button.addEventListener('click', () => {
-			overlay.classList.toggle('active');
-			modalWindow.classList.toggle('active');
-		});
+		if (modal) {
+			const content = modal.querySelector('.modal__content');
 
-		overlay.addEventListener('click', () => {
-			overlay.classList.remove('active');
-			modalWindow.classList.remove('active');
-		});
+			button.addEventListener('click', () => {
+				modal.classList.add('active');
+				document.body.classList.add('no-scroll');
+			});
+
+			content.addEventListener('click', (event) => {
+				event.stopPropagation();
+			});
+
+			modal.addEventListener('click', () => {
+				modal.classList.remove('active');
+				document.body.classList.remove('no-scroll');
+			});
+		};
 	});
+
+	alignModalWindows();
+
+	window.addEventListener('resize', alignModalWindows);
+	
+	function alignModalWindows() {
+		document.querySelectorAll('div[modal-window]').forEach((modal) => {
+			const content = modal.querySelector('.modal__content');
+			if (content.clientHeight <= window.innerHeight - 80) {
+				content.classList.add('center');
+			} else {
+				content.classList.remove('center');
+			};
+		});
+	};
 });

@@ -24,6 +24,11 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+
+	&.no-scroll {
+		overflow-y: hidden;
+		padding-right: 17px;
+	}
 }
 
 body>* {

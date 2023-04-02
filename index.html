@@ -59,72 +59,102 @@
 	</svg>
 
 	<div class="modals">
-		<div class="modal-overlay">
-			<div class="modal-overlay__close-btn">
+		<!-- callback -->
+		<div class="modal" modal-window="callback">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Заполните форму</div>
+					<div class="modal-form__subtitle">Мы свяжемся с вами в ближайшее время</div>
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<button class="button button--solid modal-form__button">Оставить заявку</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
 				<svg width="30px" height="30px">
 					<use href="#tab-icon" />
 				</svg>
 			</div>
 		</div>
+		<!-- //callback -->
 
-		<div class="modal-window" data-window="callback">
-			<div class="modal-window__title">Заполните форму</div>
-			<div class="modal-window__subtitle">Мы свяжемся с вами в ближайшее время</div>
-			<form class="modal-form">
-				<input type="text" class="modal-form__input" placeholder="Ваше имя">
-				<input type="text" class="modal-form__input" placeholder="Ваш телефон">
-				<button class="button button--solid modal-form__button">Оставить заявку</button>
-				<div class="modal-form__notice">
-					Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
-				</div>
-			</form>
+		<!-- calculate-cost -->
+		<div class="modal" modal-window="calculate-cost">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Заполните форму для быстрого расчета</div>
+					<div class="modal-form__subtitle">Заполните форму для быстрого расчета</div>
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
+					<input type="text" class="modal-form__input" placeholder="Пункт отправления">
+					<input type="text" class="modal-form__input" placeholder="Пункт назначения">
+					<input type="text" class="modal-form__input" placeholder="Габаритные размеры и масса груза">
+					<button class="button button--solid modal-form__button">Получить расчет</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
+				<svg width="30px" height="30px">
+					<use href="#tab-icon" />
+				</svg>
+			</div>
 		</div>
+		<!-- //calculate-cost -->
 
-		<div class="modal-window" data-window="calculate-cost">
-			<div class="modal-window__title">Заполните форму для быстрого расчета</div>
-			<form class="modal-form">
-				<input type="text" class="modal-form__input" placeholder="Ваше имя">
-				<input type="text" class="modal-form__input" placeholder="Ваш телефон">
-				<input type="text" class="modal-form__input" placeholder="Пункты отправления и назначения">
-				<input type="text" class="modal-form__input" placeholder="Габариты и масса груза">
-				<button class="button button--solid modal-form__button">Получить расчет</button>
-				<div class="modal-form__notice">
-					Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
-				</div>
-			</form>
+		<!-- special-conditions -->
+		<div class="modal" modal-window="special-conditions">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Оставьте заявку</div>
+					<div class="modal-form__subtitle">Мы свяжемся с вами в ближайшее время</div>
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Организация">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
+					<button class="button button--solid modal-form__button">Получить специальные условия</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
+				<svg width="30px" height="30px">
+					<use href="#tab-icon" />
+				</svg>
+			</div>
 		</div>
+		<!-- //special-conditions -->
 
-		<div class="modal-window" data-window="special-conditions">
-			<div class="modal-window__title">Оставьте заявку</div>
-			<div class="modal-window__subtitle">Мы свяжемся с вами в ближайшее время</div>
-			<form class="modal-form">
-				<input type="text" class="modal-form__input" placeholder="Ваше имя">
-				<input type="text" class="modal-form__input" placeholder="Организация">
-				<input type="text" class="modal-form__input" placeholder="Ваш телефон">
-				<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
-				<button class="button button--solid modal-form__button">Получить специальные условия</button>
-				<div class="modal-form__notice">
-					Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
-				</div>
-			</form>
+		<!-- services -->
+		<div class="modal" modal-window="services">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Заполните форму</div>
+					<div class="modal-form__subtitle">Мы свяжемся с вами в ближайшее время</div>
+					<input type="checkbox">
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Организация">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
+					<button class="button button--solid modal-form__button">Заказать</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
+				<svg width="30px" height="30px">
+					<use href="#tab-icon" />
+				</svg>
+			</div>
 		</div>
-
-		<div class="modal-window" data-window="services">
-			<div class="modal-window__title">Заполните форму</div>
-			<div class="modal-window__subtitle">Мы свяжемся с вами в ближайшее время</div>
-			<form class="modal-form">
-				<!-- <input type="checkbox"> -->
-				<input type="text" class="modal-form__input" placeholder="Ваше имя">
-				<input type="text" class="modal-form__input" placeholder="Организация">
-				<input type="text" class="modal-form__input" placeholder="Ваш телефон">
-				<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
-				<button class="button button--solid modal-form__button">Получить специальные условия</button>
-				<div class="modal-form__notice">
-					Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
-				</div>
-			</form>
-		</div>
-
+		<!-- //services -->
 	</div>
 
 	<header class="header">
@@ -142,10 +172,10 @@
 							<div class="header-top__email">sales117@mwlogistics.ru</div>
 						</div>
 						<div class="header-top__buttons">
-							<button class="button" type="button" data-modal="calculate-cost">
+							<button class="button" type="button" modal-button="calculate-cost">
 								Оставить заявку на расчет
 							</button>
-							<button class="button button--solid header-top__callback-button" type="button" data-modal="callback">
+							<button class="button button--solid header-top__callback-button" type="button" modal-button="callback">
 								Перезвоните мне
 								<span class="header-top__callback-button-arrow">
 									<img src="./img/header/arrow-right.svg" alt="arrow-right">
@@ -228,7 +258,7 @@
 								<li>Доставка тяжелых контейнеров и опасных грузов</li>
 								<li>Прямые контракты с морскими линиями</li>
 							</ul>
-							<button class="button transport-card__button" type="button" data-modal="callback">Заказать услугу</button>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
 						</div>
 					</div>
 					<!-- //transport-card -->
@@ -246,7 +276,7 @@
 								<li>Доставка тяжелых контейнеров и опасных грузов</li>
 								<li>Прямые контракты с морскими линиями</li>
 							</ul>
-							<button class="button transport-card__button" type="button" data-modal="callback">Заказать услугу</button>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
 						</div>
 					</div>
 					<!-- //transport-card -->
@@ -264,7 +294,7 @@
 								<li>Доставка тяжелых контейнеров и опасных грузов</li>
 								<li>Прямые контракты с морскими линиями</li>
 							</ul>
-							<button class="button transport-card__button" type="button" data-modal="callback">Заказать услугу</button>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
 						</div>
 					</div>
 					<!-- //transport-card -->
@@ -282,7 +312,7 @@
 								<li>Доставка тяжелых контейнеров и опасных грузов</li>
 								<li>Прямые контракты с морскими линиями</li>
 							</ul>
-							<button class="button transport-card__button" type="button" data-modal="callback">Заказать услугу</button>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
 						</div>
 					</div>
 					<!-- //transport-card -->
@@ -441,7 +471,7 @@
 							<li>Прямой контракт с КЖД: льготные условия на перевозку</li>
 							<li>Собственный контейнерный парк более 6700 шт</li>
 						</ul>
-						<button class="button button--solid trains__button" type="button" data-modal="special-conditions">Получить специальные условия</button>
+						<button class="button button--solid trains__button" type="button" modal-button="special-conditions">Получить специальные условия</button>
 					</div>
 				</div>
 			</div>
@@ -465,7 +495,7 @@
 						<div class="service-card__text">
 							Подготовим необходимые документы, рассчитаем платежи, подберем коды ТН ВЭД и поможем с досмотром
 						</div>
-						<button class="button service-card__button" type="button" data-modal="services">Заказать</button>
+						<button class="button service-card__button" type="button" modal-button="services">Заказать</button>
 					</div>
 					<!-- //service-card -->
 					<!-- service-card -->
@@ -480,7 +510,7 @@
 						<div class="service-card__text">
 							Подготовим необходимые документы, рассчитаем платежи, подберем коды ТН ВЭД и поможем с досмотром
 						</div>
-						<button class="button service-card__button" type="button" data-modal="services">Заказать</button>
+						<button class="button service-card__button" type="button" modal-button="services">Заказать</button>
 					</div>
 					<!-- //service-card -->
 					<!-- service-card -->
@@ -495,7 +525,7 @@
 						<div class="service-card__text">
 							Подготовим необходимые документы, рассчитаем платежи, подберем коды ТН ВЭД и поможем с досмотром
 						</div>
-						<button class="button service-card__button" type="button" data-modal="services">Заказать</button>
+						<button class="button service-card__button" type="button" modal-button="services">Заказать</button>
 					</div>
 					<!-- //service-card -->
 				</div>
@@ -521,7 +551,7 @@
 					<div class="clients__title">
 						<h2 class="title-2">Наши клиенты</h2>
 					</div>
-					<button class="button clients__button" type="button" data-modal="callback">Стать клиентом</button>
+					<button class="button clients__button" type="button" modal-button="callback">Стать клиентом</button>
 				</div>
 				<div class="slider clients__slider">
 					<div class="owl-carousel">
@@ -802,7 +832,7 @@
 						<li><a href="#!">Договор</a></li>
 						<li><a href="#!">Политика конфиденциальности</a></li>
 					</ul>
-					<button class="button footer__button" type="button" data-modal="callback">Перезвоните мне</button>
+					<button class="button footer__button" type="button" modal-button="callback">Перезвоните мне</button>
 				</div>
 				<!-- //footer__column -->
 			</div>
