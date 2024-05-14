@@ -1,0 +1,21 @@
+.header-bottom {
+	padding-top: 15px;
+	padding-bottom: 25px;
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		display: none;
+	}
+}
+
+.header-bottom__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 50px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		column-gap: 40px;
+	}
+}

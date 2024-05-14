@@ -1,0 +1,29 @@
+.title-1 {
+    font-weight: 800;
+    font-size: 45px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 25px;
+    }
+}
+
+.title-2 {
+    font-weight: 800;
+    font-size: 35px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 20px;
+    }
+}
+
+.title-3 {
+	font-weight: 800;
+	font-size: 25px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 16px;
+    }
+}

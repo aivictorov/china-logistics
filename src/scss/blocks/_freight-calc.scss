@@ -1,0 +1,65 @@
+.freight-calc {
+	padding: 37px 25px 40px;
+	border-radius: 20px;
+	background-color: #3451a0;
+	margin: 0 auto;
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		max-width: 460px;
+		text-align: center;
+	}
+
+	/* Mobile XS */
+	@media (max-width: 599px) {
+		max-width: 290px;
+	}
+}
+
+.freight-calc__title {
+	margin-bottom: 35px;
+	color: #FFF;
+}
+
+.freight-calc__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: unset;
+		row-gap: 5px;
+	}
+}
+
+.freight-calc__input {
+	width: 380px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 278px;
+	}
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		width: 100%;
+	}
+}
+
+.freight-calc__button {
+	height: 55px;
+	width: 340px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 245px;
+	}
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		width: 100%;
+	}
+}

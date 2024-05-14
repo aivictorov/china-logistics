@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- encoding -->
+	<meta charset="UTF-8" />
+	<!-- Mobile support -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Title and SEO -->
+	<title>Доставка грузов из Китая</title>
+	<meta name="description" content="Описание страницы" />
+	<meta name="keywords" content="ключевые слова, фразы" />
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<!-- Open Graph -->
+	<!-- <meta property="og:url" content="https://site.ru/" /> -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Заголовок" />
+	<meta property="og:description" content="Описание страницы" />
+	<meta property="og:image" content="./img/opengraph.jpg" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+		<symbol id="arrow-right" viewBox="0 0 23.9 43">
+			<polyline fill="none" stroke="#db002c" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 21.5,21.5 1.5,41.5"></polyline>
+		</symbol>
+		<symbol id="tab-icon" viewBox="0 0 24 24">
+			<g stroke-width="2" fill="none">
+				<g transform="translate(1.000000, 1.000000)">
+					<path d="M0,11 L22,11"></path>
+					<path d="M11,0 L11,22"></path>
+				</g>
+			</g>
+		</symbol>
+		<symbol id="search-icon" viewBox="0 0 88 88" fill="#b6b6b6">
+			<path d="M85 31.1c-.5-8.7-4.4-16.6-10.9-22.3C67.6 3 59.3 0 50.6.6c-8.7.5-16.7 4.4-22.5 11-11.2 12.7-10.7 31.7.6 43.9l-5.3 6.1-2.5-2.2-17.8 20 9 8.1 17.8-20.2-2.1-1.8 5.3-6.1c5.8 4.2 12.6 6.3 19.3 6.3 9 0 18-3.7 24.4-10.9 5.9-6.6 8.8-15 8.2-23.7zM72.4 50.8c-9.7 10.9-26.5 11.9-37.6 2.3-10.9-9.8-11.9-26.6-2.3-37.6 4.7-5.4 11.3-8.5 18.4-8.9h1.6c6.5 0 12.7 2.4 17.6 6.8 5.3 4.7 8.5 11.1 8.9 18.2.5 7-1.9 13.8-6.6 19.2z"></path>
+		</symbol>
+	</svg>
+
+	<div class="modals">
+		<!-- callback -->
+		<div class="modal" modal-window="callback">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Заполните форму</div>
+					<div class="modal-form__subtitle">Мы свяжемся с вами в ближайшее время</div>
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<button class="button button--solid modal-form__button" type="button">Оставить заявку</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
+				<svg width="30px" height="30px">
+					<use href="#tab-icon" />
+				</svg>
+			</div>
+		</div>
+		<!-- //callback -->
+
+		<!-- calculate-cost -->
+		<div class="modal" modal-window="calculate-cost">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Заполните форму для быстрого расчета</div>
+					<div class="modal-form__subtitle">Заполните форму для быстрого расчета</div>
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
+					<input type="text" class="modal-form__input" placeholder="Пункт отправления">
+					<input type="text" class="modal-form__input" placeholder="Пункт назначения">
+					<input type="text" class="modal-form__input" placeholder="Габаритные размеры и масса груза">
+					<button class="button button--solid modal-form__button" type="button">Получить расчет</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
+				<svg width="30px" height="30px">
+					<use href="#tab-icon" />
+				</svg>
+			</div>
+		</div>
+		<!-- //calculate-cost -->
+
+		<!-- special-conditions -->
+		<div class="modal" modal-window="special-conditions">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Оставьте заявку</div>
+					<div class="modal-form__subtitle">Мы свяжемся с вами в ближайшее время</div>
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Организация">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
+					<button class="button button--solid modal-form__button" type="button">Получить специальные условия</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
+				<svg width="30px" height="30px">
+					<use href="#tab-icon" />
+				</svg>
+			</div>
+		</div>
+		<!-- //special-conditions -->
+
+		<!-- services -->
+		<div class="modal" modal-window="services">
+			<div class="modal__content">
+				<form class="modal-form">
+					<div class="modal-form__title">Заполните форму</div>
+					<div class="modal-form__subtitle">Мы свяжемся с вами в ближайшее время</div>
+					<div class="modal-form__checkbox">
+						<label class="custom-checkbox">
+							<input type="checkbox" class="custom-checkbox__hidden">
+							<div class="custom-checkbox__checkmark"></div>
+							<span class="custom-checkbox__label">Страхование груза</span>
+						</label>
+					</div>
+					<div class="modal-form__checkbox">
+						<label class="custom-checkbox">
+							<input type="checkbox" class="custom-checkbox__hidden">
+							<div class="custom-checkbox__checkmark"></div>
+							<span class="custom-checkbox__label">Таможенное оформление</span>
+						</label>
+					</div>
+					<div class="modal-form__checkbox">
+						<label class="custom-checkbox">
+							<input type="checkbox" class="custom-checkbox__hidden">
+							<div class="custom-checkbox__checkmark"></div>
+							<span class="custom-checkbox__label">Экспедирование</span>
+						</label>
+					</div>
+					<div class="select-wrapper">
+						<select class="select">
+							<option value="">Санкт-Петербург</option>
+							<option value="">Москва</option>
+						</select>
+					</div>
+					<input type="text" class="modal-form__input" placeholder="Ваше имя">
+					<input type="text" class="modal-form__input" placeholder="Организация">
+					<input type="text" class="modal-form__input" placeholder="Ваш телефон">
+					<input type="text" class="modal-form__input" placeholder="Ваш e-mail">
+					<button class="button button--solid modal-form__button" type="button">Заказать</button>
+					<div class="modal-form__notice">
+						Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+					</div>
+				</form>
+			</div>
+			<div class="modal__close-button">
+				<svg width="30px" height="30px">
+					<use href="#tab-icon" />
+				</svg>
+			</div>
+		</div>
+		<!-- //services -->
+	</div>
+
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top__row">
+					<div class="header-top__left">
+						<div class="header-top__logo">
+							<img src="./img/header/logo.svg" alt="logo">
+						</div>
+					</div>
+					<div class="header-top__right">
+						<div class="header-top__contacts">
+							<div class="header-top__phone">+7 (800) 55 14 617</div>
+							<div class="header-top__email">sales117@mwlogistics.ru</div>
+						</div>
+						<div class="header-top__buttons">
+							<button class="button header-top__calculate-button" type="button" modal-button="calculate-cost">
+								Оставить заявку на расчет
+							</button>
+							<button class="button button--solid header-top__callback-button" type="button" modal-button="callback">
+								Перезвоните мне
+								<span class="header-top__callback-button-arrow">
+									<img src="./img/header/arrow-right.svg" alt="arrow-right">
+								</span>
+							</button>
+						</div>
+						<div class="header-top__languages">
+							<button class="language-button language-button--active" type="button">RU</button>
+							<button class="language-button" type="button">EN</button>
+							<button class="language-button" type="button">CN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<ul class="header-bottom__list">
+					<li><a href="#!">О компании</a></li>
+					<li><a href="#!">Услуги</a></li>
+					<li><a href="#!">Калькулятор </a></li>
+					<li><a href="#!">География</a></li>
+					<li><a href="#!">Виды грузов</a></li>
+					<li><a href="#!">Блог</a></li>
+					<li><a href="#!">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__title">
+						<h1 class="title-1">Доставка грузов из Китая</h1>
+					</div>
+					<div class="hero__badge-buttons">
+						<button class="badge-button" type="button">ЖД перевозка</button>
+						<button class="badge-button" type="button">Авиадоставка</button>
+						<button class="badge-button" type="button">Мультимодальная перевозка</button>
+					</div>
+					<ul class="hero__list">
+						<li>Более 6700 собственных контейнеров</li>
+						<li>Формируем собственные контейнерные поезда</li>
+						<li>Контроль груза на всем пути</li>
+						<li>Собственные склады консолидации в Китае: Шанхай и Гуанчжоу</li>
+						<li>Работаем только с юридическими лицами</li>
+					</ul>
+				</div>
+				<div class="hero__freight-calc">
+					<form class="freight-calc">
+						<div class="freight-calc__title">
+							<h3 class="title-3">Узнайте стоимость перевозки вашего груза</h3>
+						</div>
+						<div class="freight-calc__row">
+							<input type="text" class="input freight-calc__input" placeholder="Откуда">
+							<input type="text" class="input freight-calc__input" placeholder="Ваш телефон">
+							<button class="button button--solid freight-calc__button" type="button">Получить консультацию</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="transport">
+			<div class="container">
+				<div class="transport__cards">
+					<!-- transport-card -->
+					<div class="transport-card">
+						<div class="transport-card__image">
+							<img src="./img/transport/transport-1.jpg" alt="multimodal transport">
+							<div class="transport-card__title-wrapper">
+								<h4 class="transport-card__title">Железнодорожные перевозки</h4>
+							</div>
+						</div>
+						<div class="transport-card__content">
+							<ul class="transport-card__content-list">
+								<li>Собственный контейнерный парк</li>
+								<li>Прямые контракты с ЖД</li>
+								<li>Лояльная форма оплаты</li>
+							</ul>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
+						</div>
+					</div>
+					<!-- //transport-card -->
+					<!-- transport-card -->
+					<div class="transport-card">
+						<div class="transport-card__image">
+							<img src="./img/transport/transport-2.jpg" alt="multimodal transport">
+							<div class="transport-card__title-wrapper">
+								<h4 class="transport-card__title">Мультимодальные перевозки</h4>
+							</div>
+						</div>
+						<div class="transport-card__content">
+							<ul class="transport-card__content-list">
+								<li>Собственный контейнерный парк</li>
+								<li>Доставка тяжелых контейнеров и опасных грузов</li>
+								<li>Прямые контракты с морскими линиями</li>
+							</ul>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
+						</div>
+					</div>
+					<!-- //transport-card -->
+					<!-- transport-card -->
+					<div class="transport-card">
+						<div class="transport-card__image">
+							<img src="./img/transport/transport-3.jpg" alt="multimodal transport">
+							<div class="transport-card__title-wrapper">
+								<h4 class="transport-card__title">Авиаперевозки</h4>
+							</div>
+						</div>
+						<div class="transport-card__content">
+							<ul class="transport-card__content-list">
+								<li>Быстрая доставка грузов</li>
+								<li>Выгодные тарифы</li>
+								<li>Доставка от 50 кг</li>
+							</ul>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
+						</div>
+					</div>
+					<!-- //transport-card -->
+					<!-- transport-card -->
+					<div class="transport-card">
+						<div class="transport-card__image">
+							<img src="./img/transport/transport-4.jpg" alt="multimodal transport">
+							<div class="transport-card__title-wrapper">
+								<h4 class="transport-card__title">Перевозки сборных грузов</h4>
+							</div>
+						</div>
+						<div class="transport-card__content">
+							<ul class="transport-card__content-list">
+								<li>Доставка от 50 кг</li>
+								<li>Склады консолидации: Шанхай и Гуанчжоу</li>
+							</ul>
+							<button class="button transport-card__button" type="button" modal-button="callback">Заказать услугу</button>
+						</div>
+					</div>
+					<!-- //transport-card -->
+				</div>
+			</div>
+		</section>
+
+		<section class="production">
+			<div class="container">
+				<div class="production__title">
+					<h2 class="title-2">Продукция</h2>
+				</div>
+				<ul class="production__list">
+					<li>
+						<img src="./img/production/freight-1.svg" alt="production">
+						Мебель
+					</li>
+					<li>
+						<img src="./img/production/freight-2.svg" alt="production">
+						Автозапчасти и аксессуары
+					</li>
+					<li>
+						<img src="./img/production/freight-3.svg" alt="production">
+						Канцтовары
+					</li>
+					<li>
+						<img src="./img/production/freight-4.svg" alt="production">
+						Галантерея и фурнитура
+					</li>
+					<li>
+						<img src="./img/production/freight-5.svg" alt="production">
+						Текстильные изделия
+					</li>
+					<li>
+						<img src="./img/production/freight-6.svg" alt="production">
+						Климатическое и отопительное оборудование
+					</li>
+					<li>
+						<img src="./img/production/freight-7.svg" alt="production">
+						Офисная техника
+					</li>
+					<li>
+						<img src="./img/production/freight-8.svg" alt="production">
+						Промышленное торговое и производственное оборудование
+					</li>
+					<li>
+						<img src="./img/production/freight-9.svg" alt="production">
+						Товары для спорта
+					</li>
+					<li>
+						<img src="./img/production/freight-10.svg" alt="production">
+						Электротехнические товары
+					</li>
+					<li>
+						<img src="./img/production/freight-11.svg" alt="production">
+						Предметы интерьера
+					</li>
+					<li>
+						<img src="./img/production/freight-12.svg" alt="production">
+						Одежда
+					</li>
+					<li>
+						<img src="./img/production/freight-13.svg" alt="production">
+						Бытовая и промышленная химия
+					</li>
+					<li>
+						<img src="./img/production/freight-14.svg" alt="production">
+						Бытовая техника
+					</li>
+					<li>
+						<img src="./img/production/freight-15.svg" alt="production">
+						Строительные и отделочные материалы
+					</li>
+					<li>
+						<img src="./img/production/freight-16.svg" alt="production">
+						Сувенирная продукция
+					</li>
+					<li>
+						<img src="./img/production/freight-17.svg" alt="production">
+						Товары для швейного и прядильного производства
+					</li>
+					<li>
+						<img src="./img/production/freight-18.svg" alt="production">
+						Опасные грузы ADR
+					</li>
+					<li>
+						<img src="./img/production/freight-19.svg" alt="production">
+						Продукты питания не требующие температурного режима при перевозке
+					</li>
+				</ul>
+				<div class="production__form">
+					<form class="production-form">
+						<div class="production-form__title">
+							<h3 class="title-3">Не нашли информацию про свой груз?</h3>
+						</div>
+						<div class="production-form__subtitle">
+							Оставьте заявку и наш специалист проконсультирует вас в ближайшее время
+						</div>
+						<div class="production-form__row">
+							<input type="text" class="input production-form__input" placeholder="Вид груза">
+							<input type="text" class="input production-form__input" placeholder="Ваше имя">
+							<input type="text" class="input production-form__input" placeholder="Ваш телефон">
+							<button class="button button--solid production-form__button" type="button">Получить консультацию</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="containers">
+			<div class="container">
+				<div class="containers__cards">
+					<!-- container-card -->
+					<div class="container-card">
+						<div class="container-card__title">20-футовый стандартный контейнер Dry Cube</div>
+						<div class="container-card__subtitle">Для транспортировки тяжелых грузов небольшого размера</div>
+						<div class="container-card__image">
+							<img src="./img/containers/container-1.jpg" alt="20-ft container">
+						</div>
+					</div>
+					<!-- //container-card -->
+					<!-- container-card -->
+					<div class="container-card">
+						<div class="container-card__title">40-футовый высокий контейнер High Cube</div>
+						<div class="container-card__subtitle">Для перевозки легких и тяжелых объемных грузов</div>
+						<div class="container-card__image">
+							<img src="./img/containers/container-2.jpg" alt="20-ft container">
+						</div>
+					</div>
+					<!-- //container-card -->
+					<!-- container-card -->
+					<div class="container-card">
+						<div class="container-card__title">Сборные грузы</div>
+						<div class="container-card__subtitle">От 50 кг</div>
+						<div class="container-card__image">
+							<img src="./img/containers/container-3.jpg" alt="20-ft container">
+						</div>
+					</div>
+					<!-- //container-card -->
+				</div>
+			</div>
+		</section>
+
+		<section class="trains">
+			<div class="container">
+				<div class="trains__row">
+					<div class="trains__image">
+						<img src="./img/trains/trains.jpg" alt="container trains">
+					</div>
+					<div class="trains__content">
+						<div class="trains__title">
+							<h2 class="title-2">Скоростные контейнерные поезда</h2>
+						</div>
+						<div class="trains__subtitle">
+							Формируем собственные контейнерные импортные / экспортные поезда
+						</div>
+						<ul class="trains__list">
+							<li>Лояльная форма оплаты</li>
+							<li>Контроль груза на всем пути следования</li>
+							<li>Прямой контракт с КЖД: льготные условия на перевозку</li>
+							<li>Собственный контейнерный парк более 6700 шт</li>
+						</ul>
+						<button class="button button--solid trains__button" type="button" modal-button="special-conditions">Получить специальные условия</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="container">
+				<div class="services__title">
+					<h2 class="title-2">ModernWay предлагает вам дополнительные услуги</h2>
+				</div>
+				<div class="services__cards">
+					<!-- service-card -->
+					<div class="service-card">
+						<div class="service-card__image">
+							<img src="./img/services/service-1.jpg" alt="service">
+						</div>
+						<div class="service-card__title">
+							<img src="./img/services/service-icon-1.svg" alt="service-icon">
+							Страхование грузов
+						</div>
+						<div class="service-card__text">
+							Оформим необходимые документы и проконтролируем процедуру
+						</div>
+						<button class="button service-card__button" type="button" modal-button="services">Заказать</button>
+					</div>
+					<!-- //service-card -->
+					<!-- service-card -->
+					<div class="service-card">
+						<div class="service-card__image">
+							<img src="./img/services/service-2.jpg" alt="service">
+						</div>
+						<div class="service-card__title">
+							<img src="./img/services/service-icon-2.svg" alt="service-icon">
+							Таможенное оформление
+						</div>
+						<div class="service-card__text">
+							Подготовим необходимые документы, рассчитаем платежи, подберем коды ТН ВЭД и поможем с досмотром
+						</div>
+						<button class="button service-card__button" type="button" modal-button="services">Заказать</button>
+					</div>
+					<!-- //service-card -->
+					<!-- service-card -->
+					<div class="service-card">
+						<div class="service-card__image">
+							<img src="./img/services/service-3.jpg" alt="service">
+						</div>
+						<div class="service-card__title">
+							<img src="./img/services/service-icon-3.svg" alt="service-icon">
+							Экспедирование грузов
+						</div>
+						<div class="service-card__text">
+							Подберем подходящий маршрут, обеспечим безопасную доставку на всем пути следования
+						</div>
+						<button class="button service-card__button" type="button" modal-button="services">Заказать</button>
+					</div>
+					<!-- //service-card -->
+				</div>
+			</div>
+		</section>
+
+		<section class="routes">
+			<div class="container">
+				<div class="routes__map-wrapper">
+					<div class="routes__title">
+						<h2 class="title-2">Маршруты доставки</h2>
+					</div>
+					<div class="routes__map">
+						<img src="./img/routes/map.webp" alt="map">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clients">
+			<div class="container">
+				<div class="clients__row">
+					<div class="clients__title">
+						<h2 class="title-2">Наши клиенты</h2>
+					</div>
+					<button class="button clients__button" type="button" modal-button="callback">Стать клиентом</button>
+				</div>
+				<div class="slider clients__slider">
+					<div class="owl-carousel">
+						<img src="./img/clients/client-1.png" alt="client">
+						<img src="./img/clients/client-2.png" alt="client">
+						<img src="./img/clients/client-3.png" alt="client">
+						<img src="./img/clients/client-4.png" alt="client">
+						<img src="./img/clients/client-5.png" alt="client">
+						<img src="./img/clients/client-6.png" alt="client">
+						<img src="./img/clients/client-7.png" alt="client">
+						<img src="./img/clients/client-8.png" alt="client">
+						<img src="./img/clients/client-9.png" alt="client">
+						<img src="./img/clients/client-10.png" alt="client">
+					</div>
+					<div class="slider__controls">
+						<button class="slider__btn-prev" type="button">
+							<svg width="23.9px" height="43px">
+								<use href="#arrow-right"></use>
+							</svg>
+						</button>
+						<button class="slider__btn-next" type="button">
+							<svg width="23.9px" height="43px">
+								<use href="#arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="partners__title">
+					<h2 class="title-2">Наши партнеры</h2>
+				</div>
+				<div class="slider partners__slider">
+					<div class="owl-carousel">
+						<img src="./img/partners/partner-1.png" alt="partner">
+						<img src="./img/partners/partner-2.png" alt="partner">
+						<img src="./img/partners/partner-3.png" alt="partner">
+						<img src="./img/partners/partner-4.png" alt="partner">
+						<img src="./img/partners/partner-5.png" alt="partner">
+						<img src="./img/partners/partner-6.png" alt="partner">
+						<img src="./img/partners/partner-7.png" alt="partner">
+						<img src="./img/partners/partner-8.png" alt="partner">
+						<img src="./img/partners/partner-9.png" alt="partner">
+						<img src="./img/partners/partner-10.png" alt="partner">
+					</div>
+					<div class="slider__controls">
+						<button class="slider__btn-prev" type="button">
+							<svg width="23.9px" height="43px">
+								<use href="#arrow-right"></use>
+							</svg>
+						</button>
+						<button class="slider__btn-next" type="button">
+							<svg width="23.9px" height="43px">
+								<use href="#arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<section class="faq">
+			<div class="container">
+				<ul class="faq__list">
+					<!-- tab -->
+					<li class="tab">
+						<div class="tab__button">
+							Груз точно будет доставлен в срок?
+							<span class="tab__icon">
+								<svg width="24px" height="24px">
+									<use href="#tab-icon" />
+								</svg>
+							</span>
+						</div>
+						<div class="tab__content">
+							В заключаемом договоре будут обозначены плановые сроки перевозки груза из Китая в Россию, которые заранее включают в себя особенности логистических операций, сложность маршрута, сезонно-погодные условия и прочие нюансы, например, таможенное оформление груза.
+						</div>
+					</li>
+					<!-- //tab -->
+					<!-- tab -->
+					<li class="tab">
+						<div class="tab__button">
+							Могу ли я отследить свой груз?
+							<span class="tab__icon">
+								<svg width="24px" height="24px">
+									<use href="#tab-icon" />
+								</svg>
+							</span>
+						</div>
+						<div class="tab__content">
+							В нашей компании за клиентом закрепляется личный менеджер, который ежедневно информирует клиента сводками о движении его груза.
+						</div>
+					</li>
+					<!-- //tab -->
+					<!-- tab -->
+					<li class="tab">
+						<div class="tab__button">
+							Мой груз будет застрахован?
+							<span class="tab__icon">
+								<svg width="24px" height="24px">
+									<use href="#tab-icon" />
+								</svg>
+							</span>
+						</div>
+						<div class="tab__content">
+							Да, каждый отправляемый груз может быть застрахован при необходимости.
+						</div>
+					</li>
+					<!-- //tab -->
+					<!-- tab -->
+					<li class="tab">
+						<div class="tab__button">
+							Оказываете ли вы услуги по доставке физическим лицам?
+							<span class="tab__icon">
+								<svg width="24px" height="24px">
+									<use href="#tab-icon" />
+								</svg>
+							</span>
+						</div>
+						<div class="tab__content">
+							Мы работаем с юридическими лицами: ООО и ИП.
+						</div>
+					</li>
+					<!-- //tab -->
+					<!-- tab -->
+					<li class="tab">
+						<div class="tab__button">
+							Какой перечень документов будет получен?
+							<span class="tab__icon">
+								<svg width="24px" height="24px">
+									<use href="#tab-icon" />
+								</svg>
+							</span>
+						</div>
+						<div class="tab__content">
+							Подтверждение транспортных расходов осуществляется согласно НК РФ, по окончании услуги перевозки пакет документов для клиента включает: счет/фактуру, ж/д накладная (копия), акт выполненных работ, транспортная накладная (если автовывоз на склад клиента осуществлялся нами).
+						</div>
+					</li>
+					<!-- //tab -->
+				</ul>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="about__title">
+					<h2 class="title-2">О компании ModernWay</h2>
+				</div>
+				<div class="about__text">
+					<p>Modern Way Cross Border Logistics Rus – осуществляет доставку контейнеров собственными регулярными контейнерными поездами, морским линиями и авиатранспортом.</p>
+					<p>Мы предоставляем полный комплекс услуг по транспортной логистике: перевозка, экспедирование,страхование, таможенное оформление и многое другое.</p>
+					<p>Самостоятельно строим и корректируем маршруты, используем собственное оборудование.</p>
+					<p>ModernWay помогает каждому клиенту решить поставленные задачи</p>
+				</div>
+				<div class="about__subtitle">
+					Преимущества ModernWay в международных грузоперевозках
+				</div>
+				<ul class="about__benefits-list">
+					<li>Формируем собственные импортные и экспортные контейнерные поезда</li>
+					<li>Осуществляем экспортные поставки через порты Дальнего Востока</li>
+					<li>Собственный контейнерный парк 40 High Cube – более 6700</li>
+					<li>Прямые контракты с КЖД и морскими линиями</li>
+					<li>Ежедневное отслеживание груза на всем маршруте</li>
+					<li>Собственные склады консолидации</li>
+					<li>Офисы компании расположены в Китае, России, Узбекистане</li>
+				</ul>
+				<div class="about__images">
+					<div class="about-platform-1-image">
+						<img src="./img/about/platform-1.png" alt="platform">
+					</div>
+					<div class="about-platform-2-image">
+						<img src="./img/about/platform-2.png" alt="platform">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="search">
+			<div class="container">
+				<div class="search__row">
+					<div class="search__input-wrapper">
+						<input type="text" class="input search__input" placeholder="Поиск">
+						<svg class="search__search-icon" width="25px" height="25px">
+							<use href="#search-icon" />
+						</svg>
+					</div>
+					<button class="button button--solid search__button" type="button">Поиск</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__title">
+					<h2 class="title-2">Офис в Москве</h2>
+				</div>
+
+				<div class="contacts__row">
+					<div class="contacts__adress">
+						БЦ "Ростэк", Москва, Проезд Завода Серп и молот, д. 6, к. 1
+					</div>
+					<ul class="contacts__metro">
+						<li>Площадь Ильича</li>
+						<li>Авимоторная</li>
+					</ul>
+				</div>
+
+				<div class="contacts__map">
+					<iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Adc28d547589ee4d30ece53b8e2c65ee624f8023a82eca5a8d5cdf5e938b18e9e&amp;source=constructor" width="1160" height="400" frameborder="0"></iframe>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<!-- footer__column -->
+				<div class="footer__column">
+					<div class="footer__column-info">
+						БЦ "Ростэк", Москва, Проезд Завода Серп и молот, д. 6, к. 1
+					</div>
+					<div class="footer__column-list-title">
+						Услуги
+					</div>
+					<ul class="footer__column-list">
+						<li><a href="#!">Железнодорожные перевозки</a></li>
+						<li><a href="#!">Мультимодальные перевозки</a></li>
+						<li><a href="#!">Авиаперевозки</a></li>
+						<li><a href="#!">Экспорт</a></li>
+						<li><a href="#!">ЖД перевозки по России</a></li>
+						<li><a href="#!">Таможенные услуги</a></li>
+						<li><a href="#!">Экспедирование грузов</a></li>
+						<li><a href="#!">Контейнерные грузы</a></li>
+						<li><a href="#!">Сборные грузы</a></li>
+					</ul>
+				</div>
+				<!-- //footer__column -->
+				<!-- footer__column -->
+				<div class="footer__column">
+					<div class="footer__column-info">
+						График работы офиса:<br>
+						ПН-ЧТ с 9:00 до 18:00<br>
+						ПТ с 9:00 до 17:00
+					</div>
+					<div class="footer__column-list-title">
+						Клиентам
+					</div>
+					<ul class="footer__column-list">
+						<li><a href="#!">Калькулятор</a></li>
+						<li><a href="#!">Терминально-логистический комплекс</a></li>
+						<li><a href="#!">О нас</a></li>
+						<li><a href="#!">Наша команда</a></li>
+						<li><a href="#!">Вакансии</a></li>
+						<li><a href="#!">FAQ</a> </li>
+						<li><a href="#!">Контакты</a></li>
+					</ul>
+				</div>
+				<!-- //footer__column -->
+				<!-- footer__column -->
+				<div class="footer__column">
+					<div class="footer__column-info">
+						+7 (495) 18 65 152<br>
+						sales117@mwlogistics.ru
+					</div>
+					<div class="footer__column-list-title">
+						Справка
+					</div>
+					<ul class="footer__column-list">
+						<li><a href="#!">Справочная инфомрация</a></li>
+						<li><a href="#!">Статьи</a></li>
+					</ul>
+					<div class="footer__column-list-title">
+						География
+					</div>
+					<ul class="footer__column-list">
+						<li><a href="#!">Китай</a></li>
+						<li><a href="#!">Турция</a></li>
+						<li><a href="#!">Европа</a></li>
+						<li><a href="#!">Россиия</a></li>
+					</ul>
+				</div>
+				<!-- //footer__column -->
+				<!-- footer__column -->
+				<div class="footer__last-column">
+					<ul class="footer__last-column-info">
+						<li><a href="#!">Учредительные документы</a></li>
+						<li><a href="#!">Страховой полис</a></li>
+						<li><a href="#!">Договор</a></li>
+						<li><a href="#!">Политика конфиденциальности</a></li>
+					</ul>
+					<button class="button footer__button" type="button" modal-button="callback">Перезвоните мне</button>
+				</div>
+				<!-- //footer__column -->
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="./libs/jquery/jquery-3.6.4.min.js"></script>
+
+	<!-- Owl carousel -->
+	<script src="./libs/owl-carousel/owl.carousel.min.js"></script>
+
+	<!-- Custom scripts -->
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

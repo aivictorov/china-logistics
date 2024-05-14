@@ -1,0 +1,27 @@
+.services {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.services__title {
+	margin-bottom: 55px;
+	max-width: 550px;
+}
+
+.services__cards {
+	display: flex;
+	align-items: stretch;
+	column-gap: 40px;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		column-gap: 20px;
+	}
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 20px;
+	}
+}
